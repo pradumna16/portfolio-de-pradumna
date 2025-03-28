@@ -5,50 +5,40 @@ export default function Home() {
     <div className="min-h-screen">
       <ScrollAnimation />
       {/* Hero Section */}
-      <section className="h-screen flex items-center px-4 max-w-7xl mx-auto relative">
-        <div className="matrix-bg absolute inset-0 opacity-30"></div>
-        <div className="space-y-6 relative z-10">
-          <h1 className="text-4xl md:text-6xl font-bold space-y-4">
-            <div className="vim-container">
-              <div className="vim-line"></div>
-              <div className="vim-text text-[#64ffda]">
-                Hello, I'm
-                <div className="vim-cursor"></div>
-              </div>
-              <div className="vim-command">:set syntax=cyberpunk</div>
+      <section className="min-h-screen flex items-center justify-center px-4 relative">
+        <div className="matrix-bg"></div>
+        <div className="max-w-7xl w-full relative z-10">
+          <div className="space-y-8">
+            <div className="space-y-2">
+              <h1 className="hero-title">
+                <span className="cyber-text block">Hello, I'm</span>
+                <span className="block mt-2">Pradumna Pokley</span>
+              </h1>
+              <h2 className="text-2xl md:text-4xl text-gray-400">
+                Cybersecurity Professional & Penetration Tester
+              </h2>
             </div>
-            <div className="vim-container mt-4">
-              <div className="vim-line"></div>
-              <div className="vim-text">
-                Pradumna Pokley
-                <div className="vim-cursor" style={{ left: '100%' }}></div>
-              </div>
-              <div className="vim-command">:w cybersecurity.profile</div>
+            
+            <p className="max-w-2xl text-lg text-gray-400">
+              Dynamic and results-driven cybersecurity professional specializing in Vulnerability Assessment,
+              Penetration Testing (VAPT), and SOC operations. Expert in offensive tools, malware analysis,
+              and advanced security research.
+            </p>
+            
+            <div className="flex flex-wrap gap-4">
+              <a
+                href="#contact"
+                className="cyber-button"
+              >
+                Get In Touch
+              </a>
+              <a
+                href="#projects"
+                className="cyber-button"
+              >
+                View My Work
+              </a>
             </div>
-          </h1>
-          <h2 className="text-2xl md:text-4xl text-gray-400">
-            Cybersecurity Professional & Penetration Tester
-          </h2>
-          <p className="max-w-2xl text-lg text-gray-400">
-            Dynamic and results-driven cybersecurity professional specializing in Vulnerability Assessment,
-            Penetration Testing (VAPT), and SOC operations. Expert in offensive tools, malware analysis,
-            and advanced security research.
-          </p>
-          <div className="flex gap-4">
-            <a
-              href="#contact"
-              className="px-6 py-3 bg-[#64ffda] text-[#0a192f] font-semibold rounded hover:bg-[#4cd5b5] transition-colors relative overflow-hidden group"
-            >
-              <span className="relative z-10">Get In Touch</span>
-              <div className="absolute inset-0 bg-[#4cd5b5] transform -translate-x-full group-hover:translate-x-0 transition-transform duration-300"></div>
-            </a>
-            <a
-              href="#projects"
-              className="px-6 py-3 border border-[#64ffda] text-[#64ffda] font-semibold rounded hover:bg-[#64ffda]/10 transition-colors relative overflow-hidden group"
-            >
-              <span className="relative z-10">View My Work</span>
-              <div className="absolute inset-0 bg-[#64ffda]/10 transform -translate-x-full group-hover:translate-x-0 transition-transform duration-300"></div>
-            </a>
           </div>
         </div>
       </section>

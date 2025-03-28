@@ -1,15 +1,13 @@
-import React from 'react'
-import type { Metadata } from 'next'
+import './styles.css'
 import { Inter } from 'next/font/google'
-import './globals.css'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 
 const inter = Inter({ subsets: ['latin'] })
 
-export const metadata: Metadata = {
+export const metadata = {
   title: 'Pradumna Pokley - Cybersecurity Professional',
-  description: 'Portfolio of Pradumna Pokley - Cybersecurity Expert specializing in Vulnerability Assessment, Penetration Testing, and Security Research',
+  description: 'Portfolio of Pradumna Pokley, a Cybersecurity Professional & Penetration Tester',
 }
 
 export default function RootLayout({
